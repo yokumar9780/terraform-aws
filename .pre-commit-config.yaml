@@ -1,0 +1,13 @@
+repos:
+- repo: git://github.com/pre-commit/pre-commit-hooks
+  rev: v2.1.0
+  hooks:
+    - id: check-merge-conflict
+-   repo: git://github.com/pre-commit/pre-commit-hooks
+    sha: v1.1.1
+    hooks:
+      -   id: end-of-file-fixer
+      -   id: trailing-whitespace
+      -   id: check-merge-conflict
+      -   id: autopep8-wrapper
+      -   id: flake8
